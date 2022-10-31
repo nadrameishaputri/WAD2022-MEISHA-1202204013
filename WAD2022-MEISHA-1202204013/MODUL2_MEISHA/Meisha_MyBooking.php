@@ -29,8 +29,8 @@
     $date = $_POST['date'];
     $time = $_POST['checkin'];
     $duration = $_POST['duration'];
-  $checkin = date('d/m/Y H:i:s', strtotime($date)) ." ". date('', strtotime($time));
-  $checkout = date('d/m/Y H:i:s', strtotime('+'.$duration.'day', strtotime("$checkin")));
+    $checkin = date('d/m/Y H:i:s', strtotime($date)) ." ". date('', strtotime($time));
+    $checkout = date('d/m/Y H:i:s', strtotime('+'.$duration.'day', strtotime("$checkin")));
     $phone = $_POST['phone'];
     $mobil =$_POST['mobil'];
     $harga_service = 0;

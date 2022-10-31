@@ -38,7 +38,7 @@
   <div class="card mt-3">
     <div class="row">
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
-        <div>
+        <div>                                       
           <img src=" <?php
           if($namamobil == "Toyota Raize"){
             echo "raize.jpg";

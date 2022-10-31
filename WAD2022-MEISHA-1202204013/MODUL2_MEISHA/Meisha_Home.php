@@ -80,7 +80,7 @@
                  </ul>
                  </div>
                         <div class="card-footer">
-                            <button type="submit" name="now" value="Toyota Raize" class="btn btn-primary" class="nav-link" href="Meisha_Booking.php" >book now
+                            <button  type="submit" name="now" value="Toyota Raize" class="btn btn-primary" class="nav-link" href="Meisha_Booking.php" >book now
                             </button>
                         </div>
                     </div>
