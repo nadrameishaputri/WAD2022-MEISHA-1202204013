@@ -1,7 +1,7 @@
 <?php
-    include('connector.php');
-    $query = "SELECT * FROM showroom_meisha_table";
-    $hasil = mysqli_query($conne, $query);
+include('connector.php');
+$query = "SELECT * FROM showroom_meisha_table" ;
+$hasil = mysqli_query($conne, $query);
 
 ?>
 
@@ -32,8 +32,8 @@
                 </li>
             </ul>
             <div class="text-end">
-          <a href="AddItem.php" button type="button" class="btn btn-outline-light me-2">Add Car</a>
-    </div>
+                <a href="AddItem.php" button type="button" class="btn btn-outline-light me-2">Add Car</a>
+            </div>
         </div>
     </nav>
     <br>
@@ -70,14 +70,15 @@
                                     <div class="clearfix">
                                         <p class="mb-0 float-start"><?= $row['deskripsi'] ?></p>
                                     </div>
-                                    
+
                                     <br><br>
 
-                                <div class=" mb-3 d-flex justify-content-center">
-                                    <a href="ItemDetail.php" class="btn btn-primary">Detail</a> &nbsp;&nbsp;&nbsp;
-                                    <a href="CRUD.png?id_mobil=<?= $select['id_mobil'] ?>&action=delete" 
-                                    class="btn btn-danger" role="button"> Delete </a>
-                                </div>
+                                    <div class=" mb-3 d-flex justify-content-center">
+                                        <!-- <a href="ItemDetail.php" class="btn btn-primary">Detail</a> &nbsp;&nbsp;&nbsp; -->
+                                       
+                                        <a class="btn btn-primary" href="ItemDetail.php?id_mobil=<?= $row['id_mobil'] ?>">Detail</a> &nbsp;&nbsp;&nbsp;
+                                        <a class="btn btn-danger" role="button"> Delete </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

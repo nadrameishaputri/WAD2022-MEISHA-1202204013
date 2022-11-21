@@ -48,19 +48,19 @@
       <form action="" method="POST">
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Mobil</label>
-          <input type="text" name="nama_mobil" class="form-control" placeholder="Toyota Raize"id="Enter Full Name" aria-describedby="namaLengkap">
+          <input type="text" name="nama_mobil" class="form-control" placeholder="Toyota Raize"id="Enter Full Name" aria-describedby=" ">
         </div>
 
         <form action="" method="POST">
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Pemilik</label>
-          <input type="text" name="pemilik_mobil" class="form-control" placeholder="Meisha - 1202204013"id="Enter Full Name" aria-describedby="namaLengkap">
+          <input type="text" name="pemilik_mobil" class="form-control" placeholder="Meisha - 1202204013"id="Enter Full Name" aria-describedby=" ">
         </div>
 
         <form action="" method="POST">
         <div class="mb-3">
           <label for="nama" class="form-label">Merk</label>
-          <input type="text" name="merk_mobil" class="form-control" placeholder="Raize"id="Enter Full Name" aria-describedby="namaLengkap">
+          <input type="text" name="merk_mobil" class="form-control" placeholder="Raize"id="Enter Full Name" aria-describedby=" ">
         </div>
 
         <div class="mb-3">                         
