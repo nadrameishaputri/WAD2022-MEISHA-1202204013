@@ -78,7 +78,7 @@ $hasil = mysqli_query($conne, $query);
 
             <div class="mb-3">
               <label for='desc'>Deskripsi</label>
-              <textarea id='desc' name='desc' style='height:200px; width: 600px; border-radius: 8px;' readonly> '<?php echo $getDetail["deskripsi"] ?> </textarea>
+              <textarea id='desc' name='desc' style='height:100px; width: 300px; border-radius: 4px;' readonly> <?php echo $getDetail["deskripsi"] ?> </textarea>
             </div>
 
             <div class="mb-3">
@@ -91,13 +91,13 @@ $hasil = mysqli_query($conne, $query);
 
             <label for='status'>Status Pembayaran</label>
             <span class='d-flex'>
-              <input type='radio' name='status' id='lunas' value='Lunas' <?php (($getDetail["status_pembayaran"] == 'Lunas') ?; 
-              echo checked="checked"; : echo ""); ?> style='width: 15px; height: 15px; margin-right:10px;'>
-              <label for='lunas' style='margin-top: 15px; margin-right:10px;'>Lunas</label>
-              <input type='radio' name='status' id='belum' value='Belum Lunas' <?php echo (($getDetail["status_pembayaran"] == 'Belum Lunas') ? 'checked="checked"' : "") ?> style='width: 15px; height: 15px; margin-right:10px;'>
-              <label for='belum' style='margin-top: 15px;'>Belum Lunas</label>
-            </span>
-            <a href='Edit-Meisha.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-primary' style='margin-top: 40px;'>Edit</a> <br><br>
+
+            <div class="form-group">
+                    <label for="StatusPembayaran" class="form-label"></label>
+                    <input type="text" name="StatusPembayaran" readonly="readonly" class="form-control" id="StatusPembayaran"
+                       value= "<?= $select['status_pembayaran'] ?>">
+                </div><br>
+                <a href='Edit-Meisha.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-primary' style='margin-top: 40px;'>Edit</a> <br><br>
           </form>
         </div>
       <?php
@@ -105,6 +105,8 @@ $hasil = mysqli_query($conne, $query);
       ?>
     </div>
   </section>
+
+
   <!-- Form End -->
 
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
