@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 include_once("connector.php");
 ?>
@@ -15,10 +15,17 @@ include_once("connector.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
+<style>
+    html,
+    body {
+        overflow: hidden;
+        max-width: 100%;
+    }
+</style>
 
 <body>
     <section id="home" class="home">
-        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: white;">
+        <div class=" text-center text-lg-start" style="background-color: white;">
             <div class="row row gx-lg-5 align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <div class="card">
@@ -32,7 +39,7 @@ include_once("connector.php");
                 </div>
 
                 <!-- <div class="row text-center"> -->
-                <div class="col mb-3 pt-10 mx-auto ">
+                <div class="col mb-5 pt-10 mx-auto ">
                     <div class="row justify-content-center">
                         <div class="container">
                             <br><br><br>
@@ -59,7 +66,7 @@ include_once("connector.php");
                                 </div>
 
                                 <div class="mb-3">
-                                    <a a button type="submit" class="btn btn-primary" href="home2.php" name="register"> Login </a>
+                                    <a button type="submit" class="btn btn-primary" href="home2.php" name="register"> Login </a>
                                     <p class="mt-3"> Anda belum punya akun? <a href="register.php"> Daftar </a></p>
                                 </div>
 

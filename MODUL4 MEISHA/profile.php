@@ -39,14 +39,14 @@ include_once("connector.php");
 
                     <div class="btn-group">
                         <button type="button" class="btn btn-light dropdown-toggle" style="color:blue" data-bs-toggle="dropdown" aria-expanded="false">
-                            User
+                            nama
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
                         </ul>
                     </div>
                 </div>
